@@ -43,7 +43,7 @@ contract MediCore is AccessControl {
      */
 
     function registerAsHospital(string calldata name, string calldata description) external {
-        require(!hasRole(PATIENT_ROLE, msg.sender) && hospitals[msg.sender].isCreated, "User already registered");
+        require(!hasRole(PATIENT_ROLE, msg.sender) && !hospitals[msg.sender].isCreated, "User already registered");
         hospitals[msg.sender] = Hospital(name, description, true);
         _grantRole(HOSPITAL_ROLE, msg.sender);
     }
