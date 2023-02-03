@@ -10,5 +10,5 @@ forge create --rpc-url <your_rpc_url> --private-key <your_private_key> src/MediC
 
 Currently, the contract is deployed on multiple networks:
 
-- Goerli: **0x89f378972c4173595e52C07A842C2D6F6CA5024B**
-- Mumbai: **0xf86EaD782f5e14EA54e4E34cB8b21DFD924573dd**
+- Goerli: **0x26E13eBfAef30076171dd77F91aFCa75592E0050**
+- Mumbai: **0x8f6eB3281505dBfa9Fe947c903B2E30c416CAC5a**
